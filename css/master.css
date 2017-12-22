@@ -12,8 +12,30 @@ body {
 }
 #container-main {
   /* MAIN CONTAINER */
-  height: 90%;
+  height: 100%;
   width: 100%;
+}
+.form {
+  /* SEARCH BAR */
+  position: absolute;
+  z-index: 9999;
+  bottom: 20px;
+  width: 50%;
+  left: 12.5%;
+}
+input {
+  background-color: #1C1C1C;
+  border: 2px solid #424242;
+  color: #BCBCBC;
+  font-size: 14pt;
+  font-stretch: condensed;
+  padding: 8px;
+  transition: .3s ease-in-out;
+  width: 25%;
+}
+input:focus {
+  width: 50%;
+  transition: .3s ease-in-out;
 }
 #billboard {
   background-image: url("../img/background/bg1.jpg");
@@ -106,69 +128,19 @@ body {
   height: 42px;
   width: 58px;
 }
-.form {
-  /* SEARCH BAR */
-  position: absolute;
-  z-index: 9999;
-  bottom: 20px;
-  margin: auto;
-  text-align: center;
-  width: 100%;
-}
-input {
-  background: #424242;
-  border: none;
-  border-radius: 2px;
-  color: #BCBCBC;
-  font-size: 12pt;
-  font-stretch: condensed;
-  padding: 14px 20px;
-  width: 25%;
-  transition: .3s ease-in-out;
-  text-align: center;
-}
-input:focus {
-  width: 50%;
-  transition: .3s ease-in-out;
-}
 #message {
-  color: #FFF;
-	font-size: 16pt;
-	font-family: "KFhimaji" !important;
-	font-weight: bold;
-	height: 50px;
-	width: 200px;
-	letter-spacing: .5px;
-	line-height: 50px;
-	position: absolute;
-	right: 34px;
-	bottom: 20px;
-  text-align: right;
+
 }
 #details {
   /* WEATHER WIDGET */
-  border-radius: 3px;
-	width: 180px;
-	height: 50px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	text-align: center;
+
 }
 #weather {
-	line-height: 17px;
+
 }
 #description {
-	color: #FFF;
-	font-family: "Helvetica Rounded" !important;
-	font-size: 12pt;
-	display: inline-block;
-	text-transform: lowercase;
+
 }
 #temp_curr {
-	color: #FFF;
-	font-family: "Helvetica Rounded" !important;
-	font-size: 12pt;
-	display: inline-block;
-	padding-left: 2px;
+
 }
