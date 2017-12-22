@@ -1,0 +1,174 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+html,
+body {
+  background-color: #1C1C1C;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+}
+#container-main {
+  /* MAIN CONTAINER */
+  height: 90%;
+  width: 100%;
+}
+#billboard {
+  background-image: url("../img/background/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 75%;
+  height: 50%;
+  margin: 5% auto 10px;
+}
+.workspace-selector {
+  /* Menu */
+  height: 5%;
+  width: 75%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.workspace-button {
+  /* Menu Buttons */
+  background: transparent;
+  border: 3px solid #BCBCBC;
+  color: #BCBCBC;
+  font-size: 18pt;
+  height: 100%;
+  cursor: pointer;
+  width: 12%
+}
+#button-1:hover {
+  border-color: red;
+  color: red;
+}
+#button-2:hover {
+  border-color: orange;
+  color: orange;
+}
+#button-3:hover {
+  border-color: yellow;
+  color: yellow;
+}
+#button-4:hover {
+  border-color: green;
+  color: green;
+}
+#button-5:hover {
+  border-color: blue;
+  color: blue;
+}
+#button-6:hover {
+  border-color: indigo;
+  color: indigo;
+}
+#button-7:hover {
+  border-color: violet;
+  color: violet;
+}
+#button-8:hover {
+  border-color: cyan;
+  color: cyan;
+}
+#border {
+
+}
+#workspace {
+  height: 5%;
+  width: 25%;
+  margin: 5% auto 0;
+}
+.box {
+  visibility: hidden;
+  width: 25%;
+  height: 5%;
+  position: absolute;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+}
+.box a {
+  color: #fff;
+  text-decoration: none;
+  flex-grow: 1;
+}
+.img-sq {
+  height: 42px;
+  width: 42px;
+}
+.img-r {
+  height: 42px;
+  width: 58px;
+}
+.form {
+  /* SEARCH BAR */
+  position: absolute;
+  z-index: 9999;
+  bottom: 20px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+input {
+  background: #424242;
+  border: none;
+  border-radius: 2px;
+  color: #BCBCBC;
+  font-size: 12pt;
+  font-stretch: condensed;
+  padding: 14px 20px;
+  width: 25%;
+  transition: .3s ease-in-out;
+  text-align: center;
+}
+input:focus {
+  width: 50%;
+  transition: .3s ease-in-out;
+}
+#message {
+  color: #FFF;
+	font-size: 16pt;
+	font-family: "KFhimaji" !important;
+	font-weight: bold;
+	height: 50px;
+	width: 200px;
+	letter-spacing: .5px;
+	line-height: 50px;
+	position: absolute;
+	right: 34px;
+	bottom: 20px;
+  text-align: right;
+}
+#details {
+  /* WEATHER WIDGET */
+  border-radius: 3px;
+	width: 180px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	text-align: center;
+}
+#weather {
+	line-height: 17px;
+}
+#description {
+	color: #FFF;
+	font-family: "Helvetica Rounded" !important;
+	font-size: 12pt;
+	display: inline-block;
+	text-transform: lowercase;
+}
+#temp_curr {
+	color: #FFF;
+	font-family: "Helvetica Rounded" !important;
+	font-size: 12pt;
+	display: inline-block;
+	padding-left: 2px;
+}

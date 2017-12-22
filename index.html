@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to the Internet</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+    <script type="text/javascript" src="script/js/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div id="container-main">
+
+      <!-- Colored Bar -->
+      <div id="border"></div>
+
+      <div id="billboard"></div>
+
+      <!-- Menu / Workspace Selector -->
+      <div class="workspace-selector">
+          <button class="workspace-button" id="button-1" type="button" name="workspace-1">SOC</button>
+          <button class="workspace-button" id="button-2" type="button" name="workspace-2">VID</button>
+          <button class="workspace-button" id="button-3" type="button" name="workspace-3">MUS</button>
+          <button class="workspace-button" id="button-4" type="button" name="workspace-4">YAR</button>
+          <button class="workspace-button" id="button-5" type="button" name="workspace-5">SNK</button>
+          <button class="workspace-button" id="button-6" type="button" name="workspace-6">SPR</button>
+          <button class="workspace-button" id="button-7" type="button" name="workspace-7">GAM</button>
+          <button class="workspace-button" id="button-8" type="button" name="workspace-8">MSC</button>
+      </div>
+      
+      <div id="workspace">
+        <!-- Social Workspace -->
+        <div class="box" id="box-1">
+          <a href="https://inbox.google.com/"><img class="img-sq" src="img/icon/inbox.png"></a>
+          <a href="https://www.reddit.com/"><img class="img-sq" src="img/icon/reddit.png"></a>
+          <a href="https://twitter.com/"><img class="img-sq" src="img/icon/twitter.png"></a>
+        </div>
+
+        <!-- Video Workspace -->
+        <div class="box" id="box-2">
+          <a href="https://www.youtube.com/"><img class="img-r" src="img/icon/youtube.png"></a>
+          <a href="https://www.netflix.com/browse"><img class="img-sq" src="img/icon/netflix.png"></a>
+        </div>
+
+        <!-- Music Workspace -->
+        <div class="box" id="box-3">
+          <a href="https://play.spotify.com/"><img class="img-sq" src="img/icon/spotify.png"></a>
+          <a href="https://soundcloud.com/you/likes"><img class="img-sq" src="img/icon/soundcloud.png"></a>
+          <a href="https://play.google.com/music/listen#/artists">Google Music</a>
+          <a href="https://www.youtube.com/"><img class="img-r" src="img/icon/youtube.png"></a>
+        </div>
+
+        <!-- Trackers Workspace -->
+        <div class="box" id="box-4">
+          <a href="https://passthepopcorn.me/">PassThePopcorn</a>
+          <a href="https://broadcasthe.net/">Broadcasthenet</a>
+          <a href="https://apollo.rip/login.php">Apollo</a>
+          <a href="https://gazellegames.net/login.php">GazelleGames</a>
+        </div>
+
+        <!-- Sneakers Workspace -->
+        <div class="box" id="box-5">
+          <a href="https://www.kicksonfire.com/">Kicksonfire</a>
+          <a href="https://www.reddit.com/r/Sneakers/"><img class="img-sq" src="img/icon/rsneakers.png"></a>
+        </div>
+
+        <!-- Sports Workspace -->
+        <div class="box" id="box-6">
+          <a href="#">/r/soccer</a>
+          <a href="#">/r/oaklandraiders</a>
+          <a href="#">/r/nfl</a>
+        </div>
+
+        <!-- Gaming Workspace -->
+        <div class="box" id="box-7">
+          <a href="#">Wowhead</a>
+          <a href="#">/r/wow</a>
+          <a href="#">/r/overwatch</a>
+        </div>
+
+        <!-- Miscellaneous Workspace -->
+        <div class="box" id="box-8">
+          <a href="#">?</a>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="form">
+        <input type="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" autofocus="autofocus" >
+      </div>
+
+      <!--  -->
+      <div id="details">
+        <div id="weather">
+          <h2 id="description"></h2>
+          <h3 id="temp_curr"></h3>
+        </div>
+      </div>
+
+      <!--  -->
+      <div>
+        <div id="message"></div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="script/js/background.js"></script>
+</html>
