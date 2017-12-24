@@ -11,22 +11,24 @@ body {
   /* overflow: hidden; */
 }
 #container-main {
-  /* MAIN CONTAINER */
+  /* Main Container */
   position: relative;
   height: 75%;
   width: 75%;
   top: 12.5%;
   margin: auto;
 }
+
+/* Search */
 .form {
-  /* SEARCH BAR */
+  /* Search Bar Area */
   z-index: 9999;
   top: 5%;
   left: 12.5%;
 }
 input {
+  /* Search Bar */
   background-color: #1C1C1C;
-  /*border: 1px solid #424242;*/
   border: none;
   color: #595959;
   font-size: 14pt;
@@ -38,34 +40,87 @@ input {
 input:focus {
   color: #BCBCBC;
 }
+
+  /* Main Image */
 #billboard {
-  background-image: url("../img/background/bg1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50%;
+  /* Main Picture Area */
+  background: black;
+  height: 65%;
+  width: 100%;
   margin: 0 auto 8px;
+  position: relative;
 }
-.workspace-selector {
-  /* Menu */
-  height: 5%;
-  z-index: 99;
-  margin: 0 auto 8px;
+#billboard img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1s;
+}
+.bb-transparent {
+  opacity: 0;
+}
+
+/* Navigation */
+#nav {
+  /* Main Navigation Container */
   display: flex;
   justify-content: space-between;
 }
-.workspace-button {
-  /* Menu Buttons */
-  height: 100%;
+.list {
+  /* Lists - General Overrides */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  /* Main Menu */
   width: 12%;
 }
-.button-styled-1 {
+.menu-nest {
+  /* Nested Menus */
+}
+.button {
   background: transparent;
   font-family: 'Source Sans Pro', sans-serif;
   border: 3px solid #595959;
   color: #595959;
   font-size: 18pt;
   cursor: pointer;
+  transition: border-color .5s, color .5s;
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+.link {
+  /* Nested Menu Buttons/Links */
+  opacity: 0;
+  transition: 1s;
+}
+#menu-1:hover .link {
+  opacity: 1;
+}
+#menu-2:hover .link {
+  opacity: 1;
+}
+#menu-3:hover .link {
+  opacity: 1;
+}
+#menu-4:hover .link {
+  opacity: 1;
+}
+#menu-5:hover .link {
+  opacity: 1;
+}
+#menu-6:hover .link {
+  opacity: 1;
+}
+#menu-7:hover .link {
+  opacity: 1;
+}
+#menu-8:hover .link {
+  opacity: 1;
 }
 #button-1:hover {
   border-color: red !important;
@@ -99,37 +154,7 @@ input:focus {
   border-color: cyan !important;
   color: cyan !important;
 }
-#border {
-
-}
-#workspace {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.box {
-  visibility: hidden;
-  width: 12%;
-}
-.box a {
-  text-decoration: none;
-  display: block;
-  margin-bottom: 8px;
-  text-align: center;
-}
-#message {
-
-}
-#details {
-  /* WEATHER WIDGET */
-
-}
-#weather {
-
-}
-#description {
-
-}
-#temp_curr {
-
+#button-1:hover .menu-nest {
+  transform: translateY(50px);
+  transition: 1s;
 }
