@@ -1,5 +1,5 @@
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 html,
 body {
@@ -12,121 +12,110 @@ body {
 }
 #container-main {
   /* MAIN CONTAINER */
-  height: 100%;
-  width: 100%;
+  position: relative;
+  height: 75%;
+  width: 75%;
+  top: 12.5%;
+  margin: auto;
 }
 .form {
   /* SEARCH BAR */
-  position: absolute;
   z-index: 9999;
-  bottom: 20px;
-  width: 50%;
+  top: 5%;
   left: 12.5%;
 }
 input {
   background-color: #1C1C1C;
-  border: 2px solid #424242;
-  color: #BCBCBC;
+  /*border: 1px solid #424242;*/
+  border: none;
+  color: #595959;
   font-size: 14pt;
   font-stretch: condensed;
-  padding: 8px;
+  padding: 4px;
   transition: .3s ease-in-out;
-  width: 25%;
+  width: 100%;
 }
 input:focus {
-  width: 50%;
-  transition: .3s ease-in-out;
+  color: #BCBCBC;
 }
 #billboard {
   background-image: url("../img/background/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 75%;
   height: 50%;
-  margin: 5% auto 10px;
+  margin: 0 auto 8px;
 }
 .workspace-selector {
   /* Menu */
   height: 5%;
-  width: 75%;
   z-index: 99;
+  margin: 0 auto 8px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
 }
 .workspace-button {
   /* Menu Buttons */
-  background: transparent;
-  border: 3px solid #BCBCBC;
-  color: #BCBCBC;
-  font-size: 18pt;
   height: 100%;
+  width: 12%;
+}
+.button-styled-1 {
+  background: transparent;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 3px solid #595959;
+  color: #595959;
+  font-size: 18pt;
   cursor: pointer;
-  width: 12%
 }
 #button-1:hover {
-  border-color: red;
-  color: red;
+  border-color: red !important;
+  color: red !important;
 }
 #button-2:hover {
-  border-color: orange;
-  color: orange;
+  border-color: orange !important;
+  color: orange !important;
 }
 #button-3:hover {
-  border-color: yellow;
-  color: yellow;
+  border-color: yellow !important;
+  color: yellow !important;
 }
 #button-4:hover {
-  border-color: green;
-  color: green;
+  border-color: green !important;
+  color: green !important;
 }
 #button-5:hover {
-  border-color: blue;
-  color: blue;
+  border-color: blue !important;
+  color: blue !important;
 }
 #button-6:hover {
-  border-color: indigo;
-  color: indigo;
+  border-color: indigo !important;
+  color: indigo !important;
 }
 #button-7:hover {
-  border-color: violet;
-  color: violet;
+  border-color: violet !important;
+  color: violet !important;
 }
 #button-8:hover {
-  border-color: cyan;
-  color: cyan;
+  border-color: cyan !important;
+  color: cyan !important;
 }
 #border {
 
 }
 #workspace {
-  height: 5%;
-  width: 25%;
-  margin: 5% auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .box {
   visibility: hidden;
-  width: 25%;
-  height: 5%;
-  position: absolute;
-  display: flex;
-
-  align-items: center;
-  text-align: center;
+  width: 12%;
 }
 .box a {
-  color: #fff;
   text-decoration: none;
-  flex-grow: 1;
-}
-.img-sq {
-  height: 42px;
-  width: 42px;
-}
-.img-r {
-  height: 42px;
-  width: 58px;
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
 }
 #message {
 

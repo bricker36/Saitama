@@ -19,6 +19,11 @@ function search(query){
         window.location = "https://www.youtube.com/results?search_query=" + query;
         break;
 
+    case "r/":
+        query = query.substr(2);
+        window.location = "https://www.reddit.com/r/" + query;
+        break;
+
     // Default - Google
     default:
       window.location = "https://www.google.com/search?q=" + query;

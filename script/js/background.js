@@ -1,6 +1,6 @@
 $('.workspace-button').click(function() {
-  $('.workspace-button').css("border-color", "#BCBCBC");
-  $('.workspace-button').css("color", "#BCBCBC");
+  $('.workspace-button').css("border-color", "#595959");
+  $('.workspace-button').css("color", "#595959");
   $('.box').css("visibility", "hidden");
 })
 
