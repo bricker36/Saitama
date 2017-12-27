@@ -15,8 +15,37 @@ body {
   position: relative;
   height: 75%;
   width: 75%;
-  top: 12.5%;
   margin: auto;
+  top: 5%;
+}
+
+/* Time, Day of the Week, Date */
+.time-date-wrapper{
+  text-align: right;
+  position: relative;
+}
+#time {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36pt;
+  margin: 0 auto 0;
+}
+.date-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#day-of-week {
+  margin: 0;
+  font-size: 14pt;
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#date {
+  margin: 0;
+  font-size: 14pt;
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Search */
@@ -66,6 +95,7 @@ input:focus {
   /* Main Navigation Container */
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 .list {
   /* Lists - General Overrides */
@@ -92,12 +122,22 @@ input:focus {
   margin-bottom: 8px;
   text-align: center;
   text-decoration: none;
+  transition: .5s;
+}
+.button:hover {
+  color: #1C1C1C;
+  border-color: #1C1C1C;
 }
 .link {
   /* Nested Menu Buttons/Links */
   opacity: 0;
-  transition: 1s;
+  transition: .5s;
 }
+.link:hover {
+  border-color: #1C1C1C;
+  background-color: #424242;
+}
+
 #menu-1:hover .link {
   opacity: 1;
 }
@@ -123,38 +163,30 @@ input:focus {
   opacity: 1;
 }
 #button-1:hover {
-  border-color: red !important;
-  color: red !important;
+  background-color: red !important;
 }
 #button-2:hover {
-  border-color: orange !important;
-  color: orange !important;
+  background-color: orange !important;
 }
 #button-3:hover {
-  border-color: yellow !important;
-  color: yellow !important;
+  background-color: yellow !important;
 }
 #button-4:hover {
-  border-color: green !important;
-  color: green !important;
+  background-color: green !important;
 }
 #button-5:hover {
-  border-color: blue !important;
-  color: blue !important;
+  background-color: blue !important;
 }
 #button-6:hover {
-  border-color: indigo !important;
-  color: indigo !important;
+  background-color: indigo !important;
 }
 #button-7:hover {
-  border-color: violet !important;
-  color: violet !important;
+  background-color: violet !important;
 }
 #button-8:hover {
-  border-color: cyan !important;
-  color: cyan !important;
+  background-color: cyan !important;
 }
-#button-1:hover .menu-nest {
-  transform: translateY(50px);
-  transition: 1s;
+#link-1-1:hover {
+    background-color: cyan;
+    color: #1C1C1C;
 }

@@ -3,13 +3,21 @@
   <head>
     <title>Welcome to the Internet</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script type="text/javascript" src="script/js/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <div id="container-main">
+
+      <!-- Date & Time -->
+      <div class="time-date-wrapper">
+        <h1 id="time"></h1>
+        <div class="date-wrapper">
+          <p id="day-of-week"></p>
+          <p id="date"></p>
+        </div>
+      </div>
 
       <!-- Search Bar -->
       <div class="form">
@@ -34,9 +42,9 @@
         <li class="menu list" id="menu-1">
           <a class="button" id="button-1">SOC</a>
           <ul class="menu-nest list">
-            <li><a class="button link" href="https://inbox.google.com/">INBX</a></li>
-            <li><a class="button link" href="https://www.reddit.com/">RDDT</a></li>
-            <li><a class="button link" href="https://twitter.com/">TWT</a></li>
+            <li><a class="button link" id="link-1-1" href="https://inbox.google.com/">INBX</a></li>
+            <li><a class="button link" id="link-1-2" href="https://www.reddit.com/">RDDT</a></li>
+            <li><a class="button link" id="link-1-3" href="https://twitter.com/">TWT</a></li>
           </ul>
         </li>
 
@@ -109,7 +117,7 @@
         </li>
       </ul>
 
-      <!--  -->
+      <!-- Weather -->
       <div id="details">
         <div id="weather">
           <h2 id="description"></h2>
@@ -127,4 +135,5 @@
   <!-- Scripts -->
   <script type="text/javascript" src="script/js/background.js"></script>
   <script type="text/javascript" src="script/js/search.js"></script>
+  <script type="text/javascript" src="script/js/date.js"></script>
 </html>
