@@ -1,1 +1,2 @@
-# startpage
+# Saitama
+A simple startpage.

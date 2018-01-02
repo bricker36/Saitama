@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
 #container-main {
@@ -273,46 +273,8 @@ input:focus {
   background-color: #2F8FBF;
 }
 
-/* Configuration */
-.config {
-  position: relative;
-  top: 15%;
-  margin-top: 4px;
-  color: #BCBCBC;
-}
-.config input {
-  margin-top: 4px;
-  border-bottom: 1px solid #424242;
-}
-.config form {
-  font-size: 10pt;
-}
-#config-left {
-  text-align: left;
-  margin-left: 2px;
-}
-#config-right {
-  text-align: right;
-  margin-right: 2px;
-  top: 5%;
-}
-.input-config:focus{
-  border-color: orange;
-}
-.button-config:hover {
-  color: #BCBCBC;
-  border-color: orange;
-}
 #config-button {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  cursor: pointer;
-}
-#config-button:hover {
-  color: #BCBCBC;
-}
-
-.hidden {
-  visibility: hidden;
 }
