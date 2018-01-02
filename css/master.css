@@ -8,14 +8,21 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+
   /* overflow: hidden; */
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 #container-main {
   /* Main Container */
   position: relative;
   height: 75%;
   width: 75%;
-  margin: auto;
   top: 5%;
 }
 
@@ -26,7 +33,7 @@ body {
 }
 #time {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 36pt;
   margin: 0 auto 0;
 }
@@ -48,18 +55,21 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+input {
+  background-color: #1C1C1C;
+  color: #595959;
+  border: none;
+}
+
 /* Search */
-.form {
+.search {
   /* Search Bar Area */
   z-index: 9999;
   top: 5%;
   left: 12.5%;
 }
-input {
+.search input {
   /* Search Bar */
-  background-color: #1C1C1C;
-  border: none;
-  color: #595959;
   font-size: 14pt;
   font-stretch: condensed;
   padding: 4px;
@@ -261,4 +271,48 @@ input:focus {
 }
 #link-4-4:hover {
   background-color: #2F8FBF;
+}
+
+/* Configuration */
+.config {
+  position: relative;
+  top: 15%;
+  margin-top: 4px;
+  color: #BCBCBC;
+}
+.config input {
+  margin-top: 4px;
+  border-bottom: 1px solid #424242;
+}
+.config form {
+  font-size: 10pt;
+}
+#config-left {
+  text-align: left;
+  margin-left: 2px;
+}
+#config-right {
+  text-align: right;
+  margin-right: 2px;
+  top: 5%;
+}
+.input-config:focus{
+  border-color: orange;
+}
+.button-config:hover {
+  color: #BCBCBC;
+  border-color: orange;
+}
+#config-button {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+#config-button:hover {
+  color: #BCBCBC;
+}
+
+.hidden {
+  visibility: hidden;
 }
