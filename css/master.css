@@ -147,6 +147,11 @@ input:focus {
   color: #BCBCBC;
   border-color: #1C1C1C;
   background-color: #424242;
+  text-shadow:
+		-1px -1px 0 #1C1C1C,
+		1px -1px 0 #1C1C1C,
+		-1px 1px 0 #1C1C1C,
+		1px 1px 0 #1C1C1C;
 }
 
 #menu-1:hover .link {
@@ -186,12 +191,7 @@ input:focus {
   background-color: green;
 }
 #button-5:hover {
-  background-color: #1C1C1C;
-  background-image:
-    radial-gradient(orange 40%, transparent 0),
-    radial-gradient(orange 40%, transparent 0);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
+  background-color: orange;
 }
 #button-6:hover {
   background-color: indigo;
@@ -206,9 +206,7 @@ input:focus {
 /* Individual Link Button Style */
 #link-1-1:hover {
   border: 3px solid #BCBCBC;
-  background: repeating-linear-gradient(-45deg,
-    blue, cyan 2.5px,
-    #1C1C1C 0, #1C1C1C 5px);
+  background-color: #BF2F2F;
 }
 #link-1-2:hover {
   border: 3px solid #BCBCBC;
